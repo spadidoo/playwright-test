@@ -44,4 +44,11 @@ with sync_playwright() as p:
 # --verbose : shows each test result with the browser and if passed or failed
 # --device : emulate a specific device, such as 'iPhone 12' or 'Pixel 5'
 # --output : specify a directory to save test results, such as screenshots and videos
+# --report : generate a test report in a specific format, such as HTML or JSON
+# --screenshot on : capture a screenshot after each test, or only on failure
+# --video on : record a video of the test execution, or only on failure
+# --video retain-on-failure : keep the video only if the test fails, otherwise discard it
+# --trace on : capture a trace of the test execution, which includes network requests, console logs, and screenshots
+# --trace retain-on-failure : keep the trace only if the test fails, otherwise discard
+# -n : run tests in parallel using multiple workers, which can speed up test execution
 
